@@ -93,7 +93,7 @@ A API foi projetada para ser consumida principalmente por **ferramentas de teste
 - Outras ferramentas equivalentes compatíveis com requisições **REST**
 
 
-##  Corpo da requisição no formato JSON
+##  Corpo da requisição JSON
 
 ```json
 {

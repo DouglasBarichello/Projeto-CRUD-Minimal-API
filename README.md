@@ -83,3 +83,10 @@ Ponto de entrada da aplicação onde os serviços são configurados e inicializa
 
 ```bash
 dotnet run
+
+##  Consumo da API
+A API foi projetada para ser consumida principalmente por ferramentas de teste e clientes HTTP, como:
+Postman (principal plataforma utilizada), Insomnia e outras ferramentas equivalentes compatíveis com requisições REST
+
+URL base para consumo da API:  http://localhost:5000/api/usuario
+Por meio dessas plataformas, é possível executar todas as operações de CRUD utilizando os métodos POST, GET, PUT e DELETE.

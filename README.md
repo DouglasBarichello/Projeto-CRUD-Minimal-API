@@ -23,7 +23,7 @@ A aplicação utiliza o padrão de **Cache Distribuído** para armazenamento tem
 
 ##  Estrutura do Projeto
 
-O código está organizado de forma a separar responsabilidades de configuração, modelagem e roteamento:
+O código está organizado de forma a separar responsabilidades conforme o padrão MVC adaptado:
 
 ### 1. Model (`Usuario.cs`)
 Define a estrutura do recurso utilizando o tipo `record`, garantindo imutabilidade e uma sintaxe simplificada.

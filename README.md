@@ -67,6 +67,8 @@ Ponto de entrada da aplicação onde os serviços são configurados e inicializa
 
 ##  Endpoints da API
 
+URL base para consumo da API:  http://localhost:5000/api/usuario
+
 | Método | Rota                             | Descrição                                   |
 |------:|----------------------------------|---------------------------------------------|
 | POST  | `/api/usuario`                   | Cria um novo usuário e armazena no cache    |
@@ -76,17 +78,31 @@ Ponto de entrada da aplicação onde os serviços são configurados e inicializa
 
 ---
 
-##  Como Executar
+##  Consumo da API
 
 1. Certifique-se de ter o **SDK do .NET** instalado.
-2. No diretório raiz do projeto, execute:
+2. No diretório raiz do projeto, execute: dotnet run
+3. Porta configurada no projeto: 5000
+4. Para as operações de **Criação (POST)** e **Atualização (PUT)**, é obrigatório o envio de um **corpo da requisição no formato JSON**, contendo as informações do usuário.
 
-```bash
-dotnet run
 
-##  Consumo da API
-A API foi projetada para ser consumida principalmente por ferramentas de teste e clientes HTTP, como:
-Postman (principal plataforma utilizada), Insomnia e outras ferramentas equivalentes compatíveis com requisições REST
+A API foi projetada para ser consumida principalmente por **ferramentas de teste e clientes HTTP**, tais como:
 
-URL base para consumo da API:  http://localhost:5000/api/usuario
-Por meio dessas plataformas, é possível executar todas as operações de CRUD utilizando os métodos POST, GET, PUT e DELETE.
+- **Postman** (principal plataforma utilizada)
+- **Insomnia**
+- Outras ferramentas equivalentes compatíveis com requisições **REST**
+
+
+##  Corpo da requisição no formato JSON
+
+```json
+{
+  "id": 1,
+  "nome": "Douglas Barichello",
+  "email": "exemplo@email.com",
+  "senha": "123456"
+}
+
+
+
+

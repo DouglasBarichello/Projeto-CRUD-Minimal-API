@@ -47,7 +47,7 @@ Contém o mapeamento modular das rotas utilizando `IEndpointRouteBuilder`.
 
 ---
 
-### 3. Program (`Program.cs`)
+### 3. Controller (`Program.cs`)
 Ponto de entrada da aplicação onde os serviços são configurados e inicializados:
 
 - Ativação do `AddDistributedMemoryCache`
